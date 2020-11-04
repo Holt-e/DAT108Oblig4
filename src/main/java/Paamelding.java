@@ -17,6 +17,8 @@ public class Paamelding extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+        System.out.println(brukerEAO);
+        System.out.println(request.getParameter("fornavn"));
         paamelingsObjekt skjema = new paamelingsObjekt(request);
 
         if(skjema.isAllInputGyldig()){

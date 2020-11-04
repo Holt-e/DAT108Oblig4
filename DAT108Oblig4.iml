@@ -38,7 +38,6 @@
     </content>
     <orderEntry type="jdk" jdkName="15" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="eclipselink-2.7.7.v20200504-69f2c2b80d" level="project" />
     <orderEntry type="library" name="Java EE 6-Java EE 6" level="project" />
     <orderEntry type="library" name="download" level="project" />
     <orderEntry type="library" name="download1" level="project" />

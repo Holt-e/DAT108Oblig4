@@ -17,11 +17,10 @@
 <form method="post" class="pure-form pure-form-aligned">
     <fieldset>
         <div class="pure-control-group">
-            <label for="mobil">Mobil:</label> <input type="text" name="mobil" />
+            <label for="mobil">Mobil:</label> <input id="mobil" type="text" name="mobil" />
         </div>
         <div class="pure-control-group">
-            <label for="passord">Passord:</label> <input type="password"
-                                                         name="passord" />
+            <label for="passord">Passord:</label> <input id="passord" type="password" name="passord" />
         </div>
         <div class="pure-controls">
             <button type="submit" class="pure-button pure-button-primary">Logg
