@@ -25,7 +25,7 @@ public class Logginn extends HttpServlet {
         }
 
         Bruker testBruker = brukerEAO.hentBruker(mobil);
-        if (testBruker != null && no.hvl.dat108.PassordUtil.sjekkPassord(passord, testBruker.getPasswordHash())) {
+        if (testBruker != null && PassordUtil.sjekkPassord(passord, testBruker.getPasswordHash())) {
 
             HttpSession sesjon = request.getSession(false);
             if(sesjon != null) {

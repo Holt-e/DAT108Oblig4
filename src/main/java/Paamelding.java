@@ -17,7 +17,7 @@ public class Paamelding extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        no.hvl.dat108.paamelingsObjekt skjema = new no.hvl.dat108.paamelingsObjekt(request);
+        paamelingsObjekt skjema = new paamelingsObjekt(request);
 
         if(skjema.isAllInputGyldig()){
             Bruker bruker = new Bruker(request);

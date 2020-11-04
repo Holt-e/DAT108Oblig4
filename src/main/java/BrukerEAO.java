@@ -1,6 +1,7 @@
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.persistence.TypedQuery;
 import java.util.List;
 
 @Stateless
@@ -21,7 +22,7 @@ public class BrukerEAO {
         //String queryString = "select e from Bruker e";
         //TypedQuery<Bruker> query = em.createQuery(queryString, Bruker.class);
         //List<Bruker> results = query.getResultList();
-        //List al = em.createQuery("SELECT fornavn FROM dat108oblig3.bruker").getResultList();
+        //List al = em.createQuery("SELECT fornavn FROM DAT108Oblig4.bruker").getResultList();
         //return results;
 
         return em.createQuery("SELECT s FROM Bruker s").getResultList();

@@ -28,12 +28,12 @@ public class Deltagerliste extends HttpServlet {
             Bruker bruker = (Bruker) session.getAttribute("bruker");
 
             if (bruker != null) {
-                List<no.hvl.dat108.DeltagerRowHelper> rows = new ArrayList<>();
+                List<DeltagerRowHelper> rows = new ArrayList<>();
                 List<Bruker> brukere = brukerEAO.hentBrukere();
 
                 for (Bruker b : brukere) {
                     String cname = bruker.getMobil() == b.getMobil() ? "deltager_signed_in" : "deltager";
-                    rows.add(new no.hvl.dat108.DeltagerRowHelper(b, cname));
+                    rows.add(new DeltagerRowHelper(b, cname));
                 }
 
                 request.setAttribute("rows", rows);
