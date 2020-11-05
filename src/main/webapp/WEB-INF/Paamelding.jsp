@@ -28,6 +28,7 @@
         <div class="pure-control-group">
             <label for="password">Passord:</label> <input id="password" type="password" name="passord" value="${skjema.passord}" />
             <font color="red">${skjema.passordFeilmelding}</font>
+
         </div>
         <div class="pure-control-group">
             <label for="passordRepetert">Passord repetert:</label> <input id="passordRepetert" type="password" name="passordRepetert" value="${skjema.repetePassord}" />
