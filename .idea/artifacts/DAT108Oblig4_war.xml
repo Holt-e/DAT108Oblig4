@@ -9,6 +9,14 @@
     </properties>
     <root id="archive" name="DAT108Oblig4-1.0-SNAPSHOT.war">
       <element id="artifact" artifact-name="DAT108Oblig4:war exploded" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="jpa-descriptors" facet="DAT108Oblig4/jpa/JPA" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Java EE 6-Java EE 6" />
+        </element>
+      </element>
     </root>
   </artifact>
 </component>

@@ -17,14 +17,12 @@ public class Paamelding extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        System.out.println(brukerEAO);
-        System.out.println(request.getParameter("fornavn"));
         paamelingsObjekt skjema = new paamelingsObjekt(request);
 
         if(skjema.isAllInputGyldig()){
-            Bruker bruker = new Bruker(request);
-
-            brukerEAO.leggTilbruker(bruker);
+            Bruker Bruker = new Bruker(request);
+            System.out.println(Bruker);
+            brukerEAO.leggTilbruker(Bruker);
             HttpSession sesjon = request.getSession(false);
             if(sesjon != null) {
                 sesjon.invalidate();
@@ -32,18 +30,18 @@ public class Paamelding extends HttpServlet {
             sesjon = request.getSession(true);
             sesjon.setMaxInactiveInterval(100000);
 
-            sesjon.setAttribute("bruker", bruker);
+            sesjon.setAttribute("bruker", Bruker);
 
-            sesjon.setAttribute("fornavn", bruker.getFornavn());
-            sesjon.setAttribute("etternavn", bruker.getEtternavn());
-            sesjon.setAttribute("mobil", bruker.getMobil());
-            sesjon.setAttribute("kjonn", bruker.getKjonn());
+            sesjon.setAttribute("fornavn", Bruker.getFornavn());
+            sesjon.setAttribute("etternavn", Bruker.getEtternavn());
+            sesjon.setAttribute("mobil", Bruker.getMobil());
+            sesjon.setAttribute("kjonn", Bruker.getKjonn());
 
-            response.sendRedirect("/paameldingsBekreftelse");
+            response.sendRedirect("paameldingsBekreftelse");
         }else{
             skjema.settOppFeilmeldinger();
             request.getSession().setAttribute("skjema", skjema);
-            response.sendRedirect("/paamelding");
+            response.sendRedirect("paamelding");
         }
 
 

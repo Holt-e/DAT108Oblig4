@@ -4,7 +4,7 @@ import javax.persistence.Table;
 import javax.servlet.http.HttpServletRequest;
 
 @Entity
-@Table(schema = "DAT108Oblig4", name = "bruker")
+@Table(schema = "dat108oblig4v2", name = "bruker")
 public class Bruker {
     private String fornavn;
     private String etternavn;

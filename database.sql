@@ -1,4 +1,4 @@
-SET search_path TO dat108oblig3;
+SET search_path TO dat108oblig4v2;
 
 CREATE TABLE bruker
 (
@@ -7,7 +7,6 @@ CREATE TABLE bruker
    mobil            VARCHAR (60) UNIQUE,
    passordHash     VARCHAR (100),
    kjonn            VARCHAR (40),
-   PRIMARY KEY (mobil)
 );
 
 

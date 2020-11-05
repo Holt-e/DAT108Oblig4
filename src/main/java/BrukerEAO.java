@@ -12,6 +12,7 @@ public class BrukerEAO {
         em.persist(s);
     }
 
+
     public Bruker hentBruker(String mobil) {
         return em.find(Bruker.class, mobil);
     }
