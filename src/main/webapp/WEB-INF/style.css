@@ -1,15 +1,14 @@
-.error {
-    color: red;
-}
+  .error {
+    width  : 100%;
+    padding: 0;
 
-.deltager_header {
-    background-color: #cccccc;
-}
+    font-size: 80%;
+    color: white;
+    background-color: #900;
+    border-radius: 0 0 5px 5px;
 
-.deltager_signed_in {
-    background-color: #aaffaa;
-}
-
-.deltager {
-    background-color: #ffffff;
-}
+    box-sizing: border-box;
+  }
+  .error.active {
+    padding: 0.3em;
+  }
