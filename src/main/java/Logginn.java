@@ -34,7 +34,7 @@ public class Logginn extends HttpServlet {
             sesjon = request.getSession(true);
             sesjon.setMaxInactiveInterval(100000);
             sesjon.setAttribute("bruker", testBruker);
-            response.sendRedirect("/deltagerliste");
+            response.sendRedirect("deltagerliste");
         } else {
             request.setAttribute("feilmelding", "Feil mobil nummer eller passord");
 
@@ -58,7 +58,7 @@ public class Logginn extends HttpServlet {
             } else {
                 //Redirect til deltagerlisten
                 session.setAttribute("user", loginBruker);
-                response.sendRedirect("/deltagerliste");
+                response.sendRedirect("deltagerliste");
             }
         }
 
