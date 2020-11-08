@@ -44,6 +44,11 @@
             <button type="submit" class="pure-button pure-button-primary">Meld
                 meg på</button>
         </div>
+        <div class="pure-controls">
+            <button class="pure-button pure-button-primary" type="button"
+                    onclick="window.location.href = 'logginn';">redirect to Login
+            </button>
+        </div>
     </fieldset>
 </form>
 </body>

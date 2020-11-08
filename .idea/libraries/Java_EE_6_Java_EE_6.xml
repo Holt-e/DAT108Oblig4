@@ -8,6 +8,9 @@
       <root url="jar://$USER_HOME$/Downloads/Jax/jaxb-api-2.3.0.jar!/" />
       <root url="jar://$USER_HOME$/Downloads/Jax/jaxb-core-2.3.0.jar!/" />
       <root url="jar://$USER_HOME$/Downloads/Jax/jaxb-impl-2.3.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/eclipselink-2.7.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/postgresql-42.2.18.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/postgresql-42.1.4.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

@@ -21,7 +21,6 @@ public class Paamelding extends HttpServlet {
 
         if(skjema.isAllInputGyldig()){
             Bruker Bruker = new Bruker(request);
-            System.out.println(Bruker);
             brukerEAO.leggTilbruker(Bruker);
             HttpSession sesjon = request.getSession(false);
             if(sesjon != null) {
